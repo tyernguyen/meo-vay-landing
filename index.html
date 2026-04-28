@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap&subset=vietnamese" rel="stylesheet">
+<title>Mèo Vẫy May Mắn - Phong Thủy Chiêu Tài | Maneki Neko Cao Cấp</title>
+<meta name="description" content="Bộ sưu tập mèo vẫy phong thủy thủ công cao cấp, chiêu tài hút lộc, trấn trạch bình an. Quà tặng ý nghĩa cho khai trương, năm mới. Giao hàng toàn quốc qua Shopee.">
+<meta name="keywords" content="mèo vẫy, mèo phong thủy, maneki neko, mèo chiêu tài, mèo may mắn, quà khai trương, đồ phong thủy">
+<meta property="og:title" content="Mèo Vẫy May Mắn - Phong Thủy Chiêu Tài">
+<meta property="og:description" content="Bộ sưu tập mèo vẫy phong thủy thủ công, chiêu tài hút lộc.">
+<meta property="og:type" content="website">
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+
+  :root {
+    --do-son: #B8252A;
+    --do-dam: #8B1A1F;
+    --vang-dong: #C8A24B;
+    --vang-nhat: #E8D9B8;
+    --kem-nga: #FAF3E3;
+    --kem-toi: #F0E4C8;
+    --nau-dam: #2D1B0E;
+    --nau-vua: #8B6F3D;
+  }
+
+  body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: var(--nau-dam);
+    background: var(--kem-nga);
+    line-height: 1.6;
+    overflow-x: hidden;
+    font-weight: 400;
+  }
+
+  h1, h2, h3, h4, .logo, .product-name, .meaning-item h4 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+  /* === HEADER === */
+  header {
+    background: var(--nau-dam);
+    color: var(--vang-dong);
+    padding: 14px 0;
+    border-bottom: 2px solid var(--vang-dong);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+  }
+  .logo span { color: var(--do-son); }
+  nav a {
+    color: var(--vang-nhat);
+    text-decoration: none;
+    margin-left: 28px;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    transition: color 0.2s;
+  }
+  nav a:hover { color: var(--vang-dong); }
+
+  /* === HERO === */
+  .hero {
+    background: linear-gradient(180deg, var(--do-dam) 0%, var(--do-son) 100%);
+    color: var(--kem-nga);
+    padding: 90px 24px 110px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: "招財進寶";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(120px, 22vw, 280px);
+    color: var(--vang-dong);
+    opacity: 0.07;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+  .hero-content { position: relative; z-index: 1; max-width: 720px; margin: 0 auto; }
+  .hero-tag {
+    display: inline-block;
+    border: 1px solid var(--vang-dong);
+    color: var(--vang-dong);
+    padding: 8px 22px;
+    font-size: 12px;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+  .hero h1 {
+    font-size: clamp(34px, 5vw, 56px);
+    line-height: 1.15;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  .hero h1 em {
+    color: var(--vang-dong);
+    font-style: italic;
+  }
+  .hero p {
+    font-size: 17px;
+    font-style: italic;
+    color: var(--vang-nhat);
+    max-width: 540px;
+    margin: 0 auto 36px;
+    line-height: 1.7;
+  }
+  .btn {
+    display: inline-block;
+    padding: 16px 36px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid;
+    cursor: pointer;
+    transition: all 0.25s;
+    font-family: inherit;
+  }
+  .btn-gold {
+    background: var(--vang-dong);
+    color: var(--nau-dam);
+    border-color: var(--vang-dong);
+  }
+  .btn-gold:hover {
+    background: transparent;
+    color: var(--vang-dong);
+  }
+  .btn-red {
+    background: var(--do-son);
+    color: var(--kem-nga);
+    border-color: var(--do-son);
+  }
+  .btn-red:hover {
+    background: transparent;
+    color: var(--do-son);
+  }
+
+  /* === DIVIDER === */
+  .divider {
+    text-align: center;
+    padding: 48px 0 24px;
+    color: var(--vang-dong);
+    font-size: 22px;
+    letter-spacing: 1.2em;
+  }
+
+  /* === SECTION TITLE === */
+  .section-title {
+    text-align: center;
+    margin-bottom: 56px;
+  }
+  .section-title .label {
+    color: var(--do-son);
+    font-size: 12px;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .section-title h2 {
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 500;
+    color: var(--nau-dam);
+  }
+  .section-title h2 em {
+    color: var(--do-son);
+    font-style: italic;
+  }
+
+  /* === PRODUCTS === */
+  .products {
+    padding: 60px 0;
+  }
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 28px;
+  }
+  .product-card {
+    background: #FFFFFF;
+    border: 1px solid var(--vang-nhat);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(184, 37, 42, 0.15);
+  }
+  .product-img {
+    background: linear-gradient(135deg, var(--kem-nga) 0%, var(--kem-toi) 100%);
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .product-img::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, transparent 50%, rgba(200,162,75,0.15) 100%);
+  }
+  .product-img img {
+    max-width: 78%;
+    max-height: 78%;
+    object-fit: contain;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.4s;
+  }
+  .product-card:hover .product-img img {
+    transform: scale(1.08);
+  }
+  .badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: var(--do-son);
+    color: var(--vang-dong);
+    padding: 5px 12px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    z-index: 2;
+  }
+  .product-info {
+    padding: 22px;
+  }
+  .product-name {
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: var(--nau-dam);
+  }
+  .product-meaning {
+    font-size: 13px;
+    color: var(--nau-vua);
+    font-style: italic;
+    margin-bottom: 16px;
+    line-height: 1.6;
+    min-height: 42px;
+  }
+  .product-meta {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+  .meta-tag {
+    font-size: 11px;
+    color: var(--nau-vua);
+    background: var(--kem-nga);
+    padding: 3px 10px;
+    border: 1px solid var(--vang-nhat);
+  }
+  .price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    border-top: 1px dashed var(--vang-nhat);
+  }
+  .price {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--do-son);
+  }
+  .btn-shopee {
+    background: var(--do-son);
+    color: var(--kem-nga);
+    padding: 8px 16px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-family: inherit;
+  }
+  .btn-shopee:hover { background: var(--do-dam); }
+
+  /* === MEANING SECTION === */
+  .meaning-section {
+    background: var(--nau-dam);
+    color: var(--kem-nga);
+    padding: 80px 24px;
+    margin: 60px 0;
+    position: relative;
+  }
+  .meaning-section::before {
+    content: "福";
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    font-size: 200px;
+    color: var(--do-son);
+    opacity: 0.08;
+    font-weight: 700;
+  }
+  .meaning-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 36px;
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .meaning-item {
+    border-left: 2px solid var(--vang-dong);
+    padding-left: 22px;
+  }
+  .meaning-item h4 {
+    color: var(--vang-dong);
+    margin-bottom: 10px;
+    font-size: 19px;
+    font-weight: 500;
+  }
+  .meaning-item p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--vang-nhat);
+    font-family: Georgia, serif;
+  }
+
+  /* === STORY === */
+  .story {
+    padding: 60px 0;
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  .story p {
+    font-size: 17px;
+    line-height: 1.9;
+    color: var(--nau-vua);
+    font-style: italic;
+    margin-bottom: 16px;
+  }
+  .story p strong {
+    color: var(--do-son);
+    font-style: normal;
+  }
+
+  /* === FINAL CTA === */
+  .final-cta {
+    background: linear-gradient(135deg, var(--do-son) 0%, var(--do-dam) 100%);
+    color: var(--kem-nga);
+    text-align: center;
+    padding: 80px 24px;
+    position: relative;
+    overflow: hidden;
+  }
+  .final-cta::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: 
+      radial-gradient(circle at 20% 50%, rgba(200,162,75,0.15) 0%, transparent 40%),
+      radial-gradient(circle at 80% 50%, rgba(200,162,75,0.15) 0%, transparent 40%);
+    pointer-events: none;
+  }
+  .final-cta-content { position: relative; }
+  .final-cta h3 {
+    font-size: clamp(28px, 4vw, 40px);
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+  .final-cta h3 em {
+    color: var(--vang-dong);
+    font-style: italic;
+  }
+  .final-cta p {
+    color: var(--vang-nhat);
+    font-style: italic;
+    margin-bottom: 32px;
+    font-size: 16px;
+  }
+  .benefits {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 36px;
+    flex-wrap: wrap;
+  }
+  .benefit {
+    color: var(--vang-dong);
+    font-size: 13px;
+    letter-spacing: 0.1em;
+  }
+  .benefit::before { content: "◈ "; color: var(--vang-nhat); }
+
+  /* === FOOTER === */
+  footer {
+    background: var(--nau-dam);
+    color: var(--vang-nhat);
+    padding: 32px 24px;
+    text-align: center;
+    font-size: 13px;
+  }
+  footer a { color: var(--vang-dong); text-decoration: none; }
+
+  /* === ANIMATION === */
+  .fade-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+  }
+  .fade-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    nav a:not(:last-child) { display: none; }
+    .hero { padding: 60px 20px 80px; }
+    .meaning-section { padding: 60px 20px; }
+    .benefits { flex-direction: column; gap: 12px; }
+  }
+
+  /* Respect prefers-reduced-motion */
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .fade-section {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="container header-inner">
+    <div class="logo">Mèo Vẫy <span>Phong Thủy</span></div>
+    <nav>
+      <a href="#products">Sản phẩm</a>
+      <a href="#meaning">Ý nghĩa</a>
+      <a href="https://shopee.vn" target="_blank">Shopee</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-tag">Phong thủy chính gốc</div>
+    <h1>Mèo Vẫy <em>May Mắn</em><br/>Chiêu Tài Khai Vận</h1>
+    <p>Bộ sưu tập mèo phong thủy thủ công cao cấp - mang vượng khí, hút tài lộc, trấn trạch bình an. Quà tặng ý nghĩa cho dịp khai trương và năm mới.</p>
+    <a href="#products" class="btn btn-gold">Khám phá sản phẩm mới</a>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products container fade-section" id="products">
+  <div class="divider">⊹ ⊹ ⊹</div>
+  <div class="section-title">
+    <div class="label">Sản phẩm chiêu tài</div>
+    <h2>Bộ sưu tập <em>phong thủy</em> nổi bật</h2>
+  </div>
+
+  <div class="product-grid">
+
+    <article class="product-card">
+      <div class="product-img">
+        <span class="badge">BÁN CHẠY</span>
+        <img src="images/meo-vay-do.png" alt="Mèo vẫy phong thủy đỏ">
+      </div>
+      <div class="product-info">
+        <h3 class="product-name">Mèo Vẫy Đỏ Phú Quý</h3>
+        <p class="product-meaning">Đỏ tượng trưng may mắn, xua tà khí, thu hút năng lượng dương</p>
+        <div class="product-meta">
+          <span class="meta-tag">Sứ cao cấp</span>
+          <span class="meta-tag">Size M</span>
+          <span class="meta-tag">Chạy pin</span>
+        </div>
+        <div class="price-row">
+          <div class="price">450.000đ</div>
+          <a href="https://shopee.vn" target="_blank" class="btn-shopee">Mua trên Shopee</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <div class="product-img">
+        <span class="badge">CHIÊU TÀI</span>
+        <img src="images/meo-vay-hong.png" alt="Mèo vẫy hồng quý nhân">
+      </div>
+      <div class="product-info">
+        <h3 class="product-name">Mèo Vẫy Hồng Quý Nhân</h3>
+        <p class="product-meaning">Hồng cầu nhân duyên, hạnh phúc gia đình, quý nhân phù trợ</p>
+        <div class="product-meta">
+          <span class="meta-tag">Sứ cao cấp</span>
+          <span class="meta-tag">Size M</span>
+          <span class="meta-tag">Chạy pin</span>
+        </div>
+        <div class="price-row">
+          <div class="price">480.000đ</div>
+          <a href="https://shopee.vn" target="_blank" class="btn-shopee">Mua trên Shopee</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <div class="product-img">
+        <span class="badge">VƯỢNG KHÍ</span>
+        <img src="images/meo-vay-xanh.png" alt="Mèo vẫy xanh trấn trạch">
+      </div>
+      <div class="product-info">
+        <h3 class="product-name">Mèo Vẫy Xanh Trấn Trạch</h3>
+        <p class="product-meaning">Xanh dương mang sự nghiệp hanh thông, học hành tấn tới</p>
+        <div class="product-meta">
+          <span class="meta-tag">Sứ cao cấp</span>
+          <span class="meta-tag">Size M</span>
+          <span class="meta-tag">Chạy pin</span>
+        </div>
+        <div class="price-row">
+          <div class="price">480.000đ</div>
+          <a href="https://shopee.vn" target="_blank" class="btn-shopee">Mua trên Shopee</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <div class="product-img">
+        <span class="badge">CỔ ĐIỂN</span>
+        <img src="images/meo-vay-vang-1.jpg" alt="Mèo vẫy vàng truyền thống">
+      </div>
+      <div class="product-info">
+        <h3 class="product-name">Mèo Vẫy Vàng Truyền Thống</h3>
+        <p class="product-meaning">Vàng nhũ phong cách Nhật Bản cổ điển, hút tài lộc lâu dài</p>
+        <div class="product-meta">
+          <span class="meta-tag">Gốm sứ</span>
+          <span class="meta-tag">Size L</span>
+          <span class="meta-tag">Vẽ thủ công</span>
+        </div>
+        <div class="price-row">
+          <div class="price">650.000đ</div>
+          <a href="https://shopee.vn" target="_blank" class="btn-shopee">Mua trên Shopee</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <div class="product-img">
+        <span class="badge">QUÀ TẶNG</span>
+        <img src="images/meo-cap-doi-trang.jpg" alt="Cặp mèo vẫy may mắn">
+      </div>
+      <div class="product-info">
+        <h3 class="product-name">Cặp Mèo Trắng Tri Kỷ</h3>
+        <p class="product-meaning">Cặp đôi mèo gốm dễ thương, tượng trưng tình bạn và may mắn</p>
+        <div class="product-meta">
+          <span class="meta-tag">Gốm Bát Tràng</span>
+          <span class="meta-tag">Size S</span>
+          <span class="meta-tag">Quà tặng</span>
+        </div>
+        <div class="price-row">
+          <div class="price">280.000đ</div>
+          <a href="https://shopee.vn" target="_blank" class="btn-shopee">Mua trên Shopee</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <div class="product-img">
+        <span class="badge">TAM THỂ</span>
+        <img src="images/meo-vay-tam-the.jpg" alt="Mèo vẫy tam thể">
+      </div>
+      <div class="product-info">
+        <h3 class="product-name">Mèo Vẫy Tam Thể</h3>
+        <p class="product-meaning">Theo truyền thống Nhật, tam thể là mèo may mắn nhất, đa phúc khí</p>
+        <div class="product-meta">
+          <span class="meta-tag">Gốm sứ</span>
+          <span class="meta-tag">Tay trái</span>
+          <span class="meta-tag">Cao cấp</span>
+        </div>
+        <div class="price-row">
+          <div class="price">520.000đ</div>
+          <a href="https://shopee.vn" target="_blank" class="btn-shopee">Mua trên Shopee</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- MEANING -->
+<section class="meaning-section fade-section" id="meaning">
+  <div class="container">
+    <div class="section-title">
+      <div class="label" style="color: var(--vang-dong)">Trí tuệ phong thủy</div>
+      <h2 style="color: var(--kem-nga)">Ý nghĩa <em style="color: var(--vang-dong)">tay vẫy</em> & màu sắc</h2>
+    </div>
+    <div class="meaning-grid">
+      <div class="meaning-item">
+        <h4>Tay trái giơ cao</h4>
+        <p>Vẫy gọi khách hàng, tăng doanh thu kinh doanh. Đặt tại cửa hàng, văn phòng, quầy thu ngân để hút khách vào liên tục.</p>
+      </div>
+      <div class="meaning-item">
+        <h4>Tay phải giơ cao</h4>
+        <p>Vẫy gọi tiền tài, may mắn cá nhân. Đặt cạnh két sắt, bàn làm việc tại nhà, hoặc nơi cất giữ tài sản.</p>
+      </div>
+      <div class="meaning-item">
+        <h4>Mèo trắng</h4>
+        <p>Tượng trưng thuần khiết, may mắn cơ bản, hạnh phúc gia đình. Phù hợp đặt phòng khách, phòng ngủ.</p>
+      </div>
+      <div class="meaning-item">
+        <h4>Mèo vàng</h4>
+        <p>Tài lộc, phú quý, kinh doanh phát đạt. Lựa chọn số một cho doanh nhân, cửa hàng buôn bán.</p>
+      </div>
+      <div class="meaning-item">
+        <h4>Mèo đỏ</h4>
+        <p>Xua đuổi tà khí, sức khỏe dồi dào. Thích hợp gia đình có người ốm yếu hoặc cần bình an.</p>
+      </div>
+      <div class="meaning-item">
+        <h4>Mèo tam thể</h4>
+        <p>Theo văn hóa Nhật Bản, tam thể là mèo may mắn nhất - mang đa dạng phúc khí và sự cát tường.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="story container fade-section">
+  <div class="section-title">
+    <div class="label">Câu chuyện thương hiệu</div>
+    <h2>Hơn cả một <em>linh vật</em></h2>
+  </div>
+  <p>Tại Mèo Vẫy Phong Thủy, mỗi sản phẩm là kết quả của <strong>nghệ thuật thủ công truyền thống</strong> kết hợp với hiểu biết sâu sắc về phong thủy Á Đông.</p>
+  <p>Chúng tôi tin rằng một chú mèo vẫy không chỉ là vật trang trí - đó là <strong>người bạn đồng hành mang lại vượng khí</strong>, đồng thời là lời chúc thành công gửi đến những người chủ doanh nghiệp và gia chủ.</p>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta fade-section">
+  <div class="final-cta-content container">
+    <h3>Rước <em>lộc</em> về nhà ngay hôm nay</h3>
+    <p>Hơn 1,000+ khách hàng đã chọn Mèo Vẫy Phong Thủy</p>
+    <div class="benefits">
+      <span class="benefit">Miễn phí vận chuyển toàn quốc</span>
+      <span class="benefit">Tư vấn chọn mèo theo bản mệnh</span>
+      <span class="benefit">Đổi trả 7 ngày</span>
+    </div>
+    <a href="https://shopee.vn" target="_blank" class="btn btn-gold">Ghé Shopee Mèo Vẫy →</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Mèo Vẫy Phong Thủy · <a href="https://shopee.vn">Shopee</a> · <a href="#">Liên hệ Zalo OA</a></p>
+  <p style="margin-top: 8px; opacity: 0.6;">Chiêu tài 招財 · Tiến bảo 進寶 · Khai vận 開運</p>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const fadeOptions = {
+    threshold: 0.15,
+    rootMargin: '0px 0px -80px 0px'
+  };
+  const fadeObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        fadeObserver.unobserve(entry.target);
+      }
+    });
+  }, fadeOptions);
+  document.querySelectorAll('.fade-section').forEach(s => fadeObserver.observe(s));
+});
+</script>
+
+</body>
+</html>
